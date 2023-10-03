@@ -12,14 +12,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   cartItems: () => (/* binding */ cartItems)
 /* harmony export */ });
-// import tShirt from "../imgs/tShirt.jpg";
-// import phoneCase from "../imgs/phoneCase.jpg";
-// import pencils from "../imgs/pencils.jpg";
-
 var cartItems = [{
   id: 0,
   title: "Футболка UZcotton мужская",
-  image: "../imgs/tShirt.jpg",
+  image: "./imgs/tShirt.jpg",
   alt: "классическая белая футболка",
   color: "белый",
   size: 56,
@@ -41,7 +37,7 @@ var cartItems = [{
 }, {
   id: 1,
   title: "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
-  image: "../imgs/phoneCase.jpg",
+  image: "./imgs/phoneCase.jpg",
   alt: "iPhone XR в прозрачном чехле с картхолдером",
   color: "прозрачный",
   size: null,
@@ -63,7 +59,7 @@ var cartItems = [{
 }, {
   id: 2,
   title: 'Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell',
-  image: "../imgs/pencils.jpg",
+  image: "./imgs/pencils.jpg",
   alt: "Упаковка с цветными карандашами, на которой изображен замок",
   color: null,
   size: null,
@@ -719,10 +715,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// HTML:
-// <input type="text" id="myInput">
-// <button id="submitButton">Оформить заказ</button>
-
 var submitButton = document.querySelector(".order-sum__button");
 var inputs = document.querySelectorAll(".recipient__input");
 var hasError = false;
@@ -732,8 +724,6 @@ inputs.forEach(function (input) {
     if (input.value.trim() !== "" && !input.validity.valid) {
       input.classList.add("error");
       hasError = true;
-      // Отобразить сообщение об ошибке рядом с полем
-      // Например: errorDiv.innerText = "Поле не может быть пустым";
       showErrorMessage(input, "typo");
     } else {
       input.classList.remove("error");
@@ -747,8 +737,6 @@ inputs.forEach(function (input) {
       if (input.validity.valid || input.value.trim() == "") {
         input.classList.remove("error");
         hasError = false;
-        // Убрать сообщение об ошибке
-        // Например: errorDiv.innerText = "";
       }
     }
   });
@@ -776,33 +764,7 @@ submitButton.addEventListener("click", function (e) {
     }
   });
 });
-
-// const nameErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id]"
-// );
-// const sernameErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id='sername']"
-// );
-// const mailErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id='mail']"
-// );
-// const phoneErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id='mail']"
-// );
-
-// const idErrorMessage = document.querySelector(
-//   `.recipient__error-caption[data-input-id=${input.id}]`
-// );
-
 var nameErrorMessage = document.querySelector(".recipient__error-caption");
-
-// // При желании  добавить скроллинг к полю с ошибкой на мобильных устройствах
-// input.addEventListener('focus', () => {
-//   if (hasError && window.innerWidth <= 768) {
-//     input.scrollIntoView();
-//   }
-// });
-
 var showErrorMessage = function showErrorMessage(input, errorType) {
   var idErrorMessage = document.querySelector(".recipient__error-caption[data-input-id=".concat(input.id, "]"));
   switch (input.id) {

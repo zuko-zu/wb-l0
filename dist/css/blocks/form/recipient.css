@@ -61,6 +61,9 @@
 .recipient__input::placeholder {
   color: --system-gray;
 }
+.recipient__input:focus::placeholder {
+  opacity: 0;
+}
 
 .recipient__label {
   display: none;

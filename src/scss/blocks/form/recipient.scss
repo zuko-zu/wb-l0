@@ -57,6 +57,9 @@
   &::placeholder {
     color: --system-gray;
   }
+  &:focus::placeholder {
+    opacity: 0;
+  }
 }
 
 .recipient__label {

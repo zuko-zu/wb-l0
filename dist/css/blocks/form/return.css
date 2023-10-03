@@ -18,7 +18,7 @@
 
 .return {
   padding-left: 38px;
-  background: url("./../../../imgs/return-icon.svg");
+  background: url("../imgs/return-icon.svg");
   background-repeat: no-repeat;
   background-position: 8px center;
 }

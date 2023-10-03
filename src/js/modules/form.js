@@ -1,7 +1,3 @@
-// HTML:
-// <input type="text" id="myInput">
-// <button id="submitButton">Оформить заказ</button>
-
 const submitButton = document.querySelector(".order-sum__button");
 const inputs = document.querySelectorAll(".recipient__input");
 
@@ -13,8 +9,6 @@ inputs.forEach((input) => {
     if (input.value.trim() !== "" && !input.validity.valid) {
       input.classList.add("error");
       hasError = true;
-      // Отобразить сообщение об ошибке рядом с полем
-      // Например: errorDiv.innerText = "Поле не может быть пустым";
       showErrorMessage(input, "typo");
     } else {
       input.classList.remove("error");
@@ -29,8 +23,6 @@ inputs.forEach((input) => {
       if (input.validity.valid || input.value.trim() == "") {
         input.classList.remove("error");
         hasError = false;
-        // Убрать сообщение об ошибке
-        // Например: errorDiv.innerText = "";
       }
     }
   });
@@ -60,31 +52,7 @@ submitButton.addEventListener("click", (e) => {
   });
 });
 
-// const nameErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id]"
-// );
-// const sernameErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id='sername']"
-// );
-// const mailErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id='mail']"
-// );
-// const phoneErrorMessage = document.querySelector(
-//   ".recipient__error-caption[data-input-id='mail']"
-// );
-
-// const idErrorMessage = document.querySelector(
-//   `.recipient__error-caption[data-input-id=${input.id}]`
-// );
-
 const nameErrorMessage = document.querySelector(".recipient__error-caption");
-
-// // При желании  добавить скроллинг к полю с ошибкой на мобильных устройствах
-// input.addEventListener('focus', () => {
-//   if (hasError && window.innerWidth <= 768) {
-//     input.scrollIntoView();
-//   }
-// });
 
 const showErrorMessage = (input, errorType) => {
   const idErrorMessage = document.querySelector(
