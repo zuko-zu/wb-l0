@@ -8,7 +8,7 @@
 body {
   background-color: var(--background-smoky);
   color: var(--text-black);
-  font-family: SegoeUI, sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
 }
 
