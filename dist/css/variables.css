@@ -1,0 +1,16 @@
+:root {
+  --system-white: #ffffff;
+  --system-violet: #6725a8;
+  --background-smoky: #f6f6fa;
+  --background-white: #ffffff;
+  --text-black: #000000;
+  --text-white: #fff;
+  --system-magenta: #cb11ab;
+  --system-green: #0cb477;
+  --system-gray: #9797af;
+  --light-system-gray: #a0a0a4;
+  --system-smoky-dark: #f0ecf4;
+  --rulers: rgba(0, 0, 0, 0.1);
+  --rulers-input: rgba(0, 0, 0, 0.2);
+  --system-orange: #f55123;
+}

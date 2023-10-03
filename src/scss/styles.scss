@@ -1,0 +1,21 @@
+@import "./_base";
+@import "./variables";
+
+@import "./blocks/count-bage.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/header";
+@import "./blocks/tooltip.scss";
+@import "./blocks/form/checkbox.scss";
+@import "./blocks/form/button.scss";
+@import "./blocks/form/return.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/cart.scss";
+@import "./blocks/form/cart-item.scss";
+@import "./blocks/form/missing-cart-item.scss";
+@import "./blocks/form/delivery.scss";
+@import "./blocks/form/payment.scss";
+@import "./blocks/form/recipient.scss";
+@import "./blocks/form/order-sum.scss";
+@import "./blocks/navbar.scss";
+@import "./blocks/footer.scss";

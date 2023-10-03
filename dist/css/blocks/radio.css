@@ -1,0 +1,5 @@
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+  accent-color: #cb11ab;
+}

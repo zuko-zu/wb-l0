@@ -1,0 +1,15 @@
+.count-bage {
+  display: inline-block;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 2px;
+  border-radius: 16px;
+  background: var(--system-orange, #f55123);
+  color: var(--text-white);
+  text-align: center;
+  font-family: Segoe UI;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 180% */
+}

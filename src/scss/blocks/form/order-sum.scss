@@ -1,0 +1,204 @@
+.order-sum {
+  color: var(--text-black, #000);
+
+  /* Сайт/Caption */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+
+  padding: 8px 0 16px;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+
+.order-sum__title-wrapper {
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 6px;
+  }
+}
+
+.order-sum__sum {
+  color: var(--text-black, #000);
+
+  /* Сайт/Н3-new */
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.2px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.24px;
+  }
+}
+
+.order-sum__items {
+  margin-bottom: 16px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+  }
+}
+
+.order-sum__checkbox {
+  margin-bottom: 8px;
+  font: inherit;
+  padding-top: 7px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 0;
+  }
+}
+
+.order-sum__item {
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--text-black, #000);
+
+  /* Сайт/Body */
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.order-sum__return,
+.order-sum__debiting-info {
+  padding: 8px 8px 12px 8px;
+  border-radius: 8px;
+  background-color: var(--system-smoky-dark);
+
+  color: var(--text-black, #000);
+
+  /* Сайт/Caption */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+.order-sum__return {
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 26px;
+  }
+}
+
+.order-sum__return .tooltip {
+  top: 45px;
+}
+
+.order-sum__button {
+  width: 100%;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.order-sum__agreement {
+  display: flex;
+  gap: 8px;
+}
+
+.order-sum__agreement-link {
+  color: inherit;
+  border-bottom: 1px solid var(--rulers);
+}
+
+.order-sum__agreement-icon {
+  flex-shrink: 0;
+}
+
+.order-sum__debiting-info {
+  margin-bottom: 25px;
+}
+
+.order-sum__delivery {
+  display: none;
+
+  color: var(--text-black, #000);
+
+  /* Сайт/Caption */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.order-sum__delivery-date {
+  color: var(--system-magenta);
+  border-bottom: 1px dashed var(--system-magenta);
+  align-self: flex-start;
+}
+
+.order-sum__subtitle {
+  color: var(--text-black, #000);
+
+  /* Сайт/H4 */
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.order-sum__section {
+  margin-bottom: 12px;
+  display: none;
+  color: var(--text-black, #000);
+
+  /* Сайт/Подпись */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+  }
+}
+
+.order-sum__section-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-sum__payment-info {
+  display: flex;
+}
+
+.order-sum__return-value {
+  cursor: pointer;
+  &:hover ~ .order-sum__price-tooltip {
+    display: block;
+    max-width: 288px;
+  }
+}
+
+.order-sum__edit-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.order-sum__card-date {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}

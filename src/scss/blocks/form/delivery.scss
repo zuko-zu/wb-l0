@@ -1,0 +1,141 @@
+.delivery__label {
+  color: var(--text-black);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+
+  @media screen and (min-width: 1024px) {
+    min-width: 153px;
+  }
+}
+
+.delivery__item {
+  padding-bottom: 8px;
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 0;
+  }
+}
+
+.delivery__value {
+  color: var(--text-black);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.delivery__item,
+.delivery__cost,
+.delivery__address {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+  }
+}
+
+.delivery__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 25px;
+  }
+}
+
+.delivery__address {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+  }
+}
+
+.delivery__address-rating-icon {
+  margin-right: 4px;
+  line-height: 0;
+}
+
+.delivery__address-rating {
+  margin-right: 8px;
+}
+
+.delivery__address-wrapper {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.delivery__address-rating-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.delivery__address-value {
+  margin-bottom: 4px;
+}
+
+.delivery__address-rating,
+.delivery__address-schedule {
+  color: var(--text-black, #000);
+
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.delivery__date {
+  margin-bottom: 12px;
+}
+
+.delivery__return {
+  position: relative;
+  @media screen and (min-width: 1024px) {
+    padding-top: 2px;
+    padding-bottom: 4px;
+    background-position: 0 center;
+    padding-left: 30px;
+  }
+}
+
+.delivery__return .tooltip {
+  left: 230px;
+}
+
+.delivery__return-value {
+  cursor: pointer;
+  &:hover ~ .delivery__price-tooltip {
+    display: block;
+    max-width: 288px;
+  }
+}
+
+.delivery__img-wrapper {
+  position: relative;
+}
+
+.delivery__imgs {
+  display: flex;
+  gap: 8px;
+}
+
+.delivery__img {
+  width: 40px;
+  height: 56px;
+}
+
+.delivery__item-count {
+  position: absolute;
+  z-index: 2;
+  top: -8px;
+  right: -4px;
+}

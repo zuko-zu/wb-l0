@@ -1,0 +1,114 @@
+.recipient .order-form__title-wrapper {
+  margin-bottom: 21px;
+}
+
+.recipient__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 41px 0;
+  @media screen and (min-width: 1024px) {
+    padding-top: 12px;
+    flex-direction: row;
+    gap: 38px 24px;
+    flex-wrap: wrap;
+  }
+}
+
+.recipient__input-wrapper {
+  position: relative;
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    flex-basis: 180px;
+  }
+  @media screen and (min-width: 1400px) {
+    flex-basis: 217px;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    @media screen and (min-width: 1024px) {
+      flex-basis: 283px;
+    }
+    @media screen and (min-width: 1400px) {
+      flex-basis: 338px;
+    }
+  }
+}
+
+.recipient__input {
+  outline: none;
+  padding-bottom: 2px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+
+  color: var(--text-black, #000);
+
+  /* Сайт/Body */
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+
+  &::placeholder {
+    color: --system-gray;
+  }
+}
+
+.recipient__label {
+  display: none;
+  color: var(--light-system-gray, #a0a0a4);
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+
+  position: absolute;
+  left: 0;
+  top: -18px;
+}
+
+.recipient__input-caption {
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+}
+
+.recipient__error-caption {
+  display: none;
+  color: var(--system-orange);
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+
+.recipient__input.error {
+  color: var(--system-orange);
+  border-color: var(--system-orange);
+}
+
+.recipient__input.error ~ .recipient__error-caption {
+  display: block;
+}
+
+.recipient__input.error ~ .recipient__label {
+  display: block;
+}
+
+.recipient__input:focus ~ .recipient__label {
+  display: block;
+}

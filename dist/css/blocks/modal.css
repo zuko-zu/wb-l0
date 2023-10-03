@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(5, 0, 10, 0.3);
+  z-index: 100;
+}
+
+.modal {
+  border-radius: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+  background: var(--background-white);
+  padding: 24px;
+  padding-top: 16px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1024px) {
+  .modal {
+    width: 500px;
+    height: auto;
+    border-radius: 16px;
+  }
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  color: var(--text-black, #000);
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-bottom: 13px;
+}
+
+.address-modal__option-button {
+  border-radius: 20px;
+  border: 2px solid rgba(203, 17, 171, 0.15);
+  background: var(--text-white);
+  color: var(--text-black, #000);
+  /* Сайт/Подпись bold */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 123.077% */
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.address-modal__option-button.active {
+  border: 2px solid #cb11ab;
+}
+
+.address-modal__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.modal li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0 8px;
+}
+
+.modal label {
+  flex-grow: 1;
+}
+
+.modal__delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.modal__delete-btn:hover path {
+  fill: #f55123;
+}
+
+.modal__select-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 48px;
+  border-radius: 8px;
+  background: var(--system-magenta, #cb11ab);
+  /* Тень в прокрутке */
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  color: var(--background-white, #fff);
+  text-align: center;
+  /* Сайт/H4 */
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  width: 100%;
+  line-height: 24px; /* 150% */
+  margin-top: calc(100% - 60px);
+}
+@media screen and (min-width: 1024px) {
+  .modal__select-btn {
+    width: 164px;
+    margin-top: auto;
+  }
+}
+
+.address-modal.open {
+  display: block;
+}
+
+.open {
+  display: block;
+}
+
+.address-modal__list-pick-up label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.address-modal__delivery-type,
+.address-modal__rating {
+  color: #000;
+  /* Сайт/Подпись */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+.address-modal__delivery-type {
+  color: var(--light-system-gray, #a0a0a4);
+}
+
+.address-modal__list-pick-up {
+  display: none;
+}
+
+.address-modal__label-wrapper {
+  flex-grow: 1;
+}
+
+.address-modal__subtitle {
+  margin-bottom: 12px;
+  color: var(--text-black, #000);
+  /* Сайт/Подпись bold */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 123.077% */
+}
+
+.payment-modal {
+  display: none;
+}
+
+.payment-modal.open {
+  display: block;
+}
+
+.payment-modal li {
+  align-items: center;
+}

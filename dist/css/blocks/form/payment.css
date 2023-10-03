@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.payment__info {
+  display: flex;
+  color: var(--text-black);
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.payment__debiting-info {
+  color: var(--system-gray, #9797af);
+  /* Сайт/Caption */
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+.payment__card-type {
+  margin-right: 8px;
+}
+
+.payment__card-number {
+  margin-right: 12px;
+}

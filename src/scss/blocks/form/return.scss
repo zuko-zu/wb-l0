@@ -1,0 +1,25 @@
+.return {
+  color: var(--text-black);
+
+  font-family: Segoe UI;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.return__value {
+  color: var(--system-green);
+}
+
+.return__label,
+.return__value {
+  display: inline;
+}
+
+.return {
+  padding-left: 38px;
+  background: url("./../../../imgs/return-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 8px center;
+}

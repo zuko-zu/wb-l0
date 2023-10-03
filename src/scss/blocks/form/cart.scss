@@ -1,0 +1,68 @@
+.cart__accordion-btn {
+  background: transparent;
+  border: none;
+  padding: 0 5px;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+
+.cart__section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cart__item-list {
+  list-style: none;
+}
+
+.cart__title {
+  margin-top: -10px;
+  margin-bottom: 16px;
+
+  color: var(--text-black);
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.28px;
+
+    margin-top: 10px;
+    margin-bottom: 26px;
+  }
+}
+
+.cart__in-stock {
+  margin-bottom: 32px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 17px;
+  }
+}
+
+.cart__out-of-stock-count {
+  color: var(--text-black);
+
+  /* Сайт/Body-semibold */
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.cart__in-stock-accordion-header {
+  color: var(--text-black);
+
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}

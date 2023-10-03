@@ -1,0 +1,65 @@
+.checkbox {
+  margin-top: -3px;
+  position: relative;
+  padding-left: 33px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  min-height: 22px;
+  display: flex;
+  align-items: center;
+
+  color: var(--text-black);
+
+  /* Сайт/Body */
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid var(--rulers-input);
+  border-radius: 6px;
+  background-color: var(--system-white);
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input:checked ~ .checkbox__checkmark {
+  background-color: var(--system-magenta);
+  border-color: var(--system-magenta);
+}
+
+.checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox__input:checked ~ .checkbox__checkmark:after {
+  display: block;
+}
+
+.checkbox__checkmark::after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
