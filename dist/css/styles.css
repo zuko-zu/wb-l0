@@ -327,13 +327,13 @@ input[type=radio] {
   cursor: pointer;
   width: 28px;
   height: 28px;
-  background-image: url("../../imgs/humburger.svg");
+  background-image: url("../imgs/humburger.svg");
 }
 @media screen and (min-width: 1024px) {
   .header__humburger-btn {
     width: 48px;
     height: 48px;
-    background-image: url("../../imgs/humburger-desctop.svg");
+    background-image: url("../imgs/humburger-desctop.svg");
   }
 }
 
